@@ -15,6 +15,11 @@ git clone https://github.com/wxqee/wxqee.github.io
 
 Use CNAME to setup the domain `xiaoqiang.cn` as `wxqee.github.io`, and CNAME the sub domain `www` to `xiaoqiang.cn`. I am using [Cloudflare](https://dash.cloudflare.com/) as DNS and FM of my domain.
 
+Type| Name| Content| TTL 
+---| ---| ---| ---
+CNAME| @| wxqee.github.io| Auto
+CNAME| www| xiaoqiang.cn| Auto
+
 Go to github my [Website Project](https://github.com/wxqee/wxqee.github.io), and click "Settings - Pages", find "Custom domain", type in the domain "www.wangxiaoqiang.cn".
 
 Open the browser, to see if [www.wwangxiaoqiang.cn](http://www.wangxiaoqiang.cn) works.

@@ -26,4 +26,4 @@ Where| Value
 ---| ---
 Settings - Pages - Custom domain| wangxiaoqiang.cn
 
-Open the browser, to see if [www.wwangxiaoqiang.cn](http://www.wangxiaoqiang.cn) and [wwangxiaoqiang.cn](http://wangxiaoqiang.cn) works.
+Open the browser, to see if [www.wwangxiaoqiang.cn](http://www.wangxiaoqiang.cn) and [wangxiaoqiang.cn](http://wangxiaoqiang.cn) works.

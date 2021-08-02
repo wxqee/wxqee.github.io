@@ -20,6 +20,10 @@ Type| Name| Content| TTL
 CNAME| @| wxqee.github.io| Auto
 CNAME| www| xiaoqiang.cn| Auto
 
-Go to github my [Website Project](https://github.com/wxqee/wxqee.github.io), and click "Settings - Pages", find "Custom domain", type in the domain "www.wangxiaoqiang.cn".
+Go to github my [Website Project](https://github.com/wxqee/wxqee.github.io), and click "Settings - Pages", find "Custom domain", type in the domain "wangxiaoqiang.cn".
+
+Where| Value
+---| ---
+Settings - Pages - Custom domain| wangxiaoqiang.cn
 
 Open the browser, to see if [www.wwangxiaoqiang.cn](http://www.wangxiaoqiang.cn) works.

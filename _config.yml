@@ -23,7 +23,7 @@ email: xq21@vip.qq.com
 description: >- # this means to ignore newlines until "baseurl:"
   这里是我的文章空间，用来记录和分享软件技术文章。
   将包含Web、DevOps、Backend、项目管理、技术管理等经验。
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.wangxiaoqiang.cn" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: wxqee
 github_username:  wxqee

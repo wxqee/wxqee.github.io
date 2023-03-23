@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "TodoMVC In Javascript Dom Scripting"
-date:   2023-03-15 00:08:59 +0800
+date:   2023-03-24 00:40:00 +0800
 categories: javascript dom
 ---
 

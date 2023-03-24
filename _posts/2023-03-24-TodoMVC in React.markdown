@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "TodoMVC in React"
-date:   2023-03-24 19.59:00 +0800
+date:   2023-03-24 19:59:00 +0800
 categories: javascript
 ---
 

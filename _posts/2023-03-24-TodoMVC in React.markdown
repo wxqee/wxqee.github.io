@@ -111,7 +111,7 @@ It includes
 
 ## app.js
 
-```js
+```jsx
 (function (window) {
 	"use strict";
 

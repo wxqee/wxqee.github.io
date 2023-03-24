@@ -2,7 +2,7 @@
 layout: post
 title:  "TodoMVC In Javascript Dom Scripting"
 date:   2023-03-24 00:40:00 +0800
-categories: javascript dom
+categories: javascript
 ---
 
 I created this simple implementation based on dom programming for guiding a friend started with web development.

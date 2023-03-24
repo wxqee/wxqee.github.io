@@ -1,10 +1,3 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
----
-
 <!-- Html Elements for Search -->
 <div id="search-container">
   <input type="text" id="search-input" placeholder="search...">
@@ -23,5 +16,4 @@ SimpleJekyllSearch({
   searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>',
 })
 </script>
-
 

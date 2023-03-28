@@ -7,7 +7,7 @@ categories: DevOps
 
 为了解决这样的问题：
 
-![image-20230325190810829](/assets/image-20230325190810829.png)
+![image-20230325190810829](../assets/image-20230325190810829.png)
 
 只要一条命令：
 
@@ -15,7 +15,7 @@ categories: DevOps
 git config --global core.quotepath off
 ```
 
-![image-20230325190919082](/assets/image-20230325190919082.png)
+![image-20230325190919082](../assets/image-20230325190919082.png)
 
 拿下。
 

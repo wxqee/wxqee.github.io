@@ -9,6 +9,7 @@ categories: 教程之CheatSheet
 
 ```sh
 # Login DevHub, and Create a ScratchOrg of it
+# 打开 App Launcher 中的 "Active Scratch Orgs" 应用来管理 DevHub Org 中的 Scratch Org.
 sfdx auth:web:login --setdefaultdevhubusername --setalias my-hub-org
 sfdx force:org:create --definitionfile my-org-def.json --setdefaultusername --setalias my-scratch-org
 
@@ -32,6 +33,7 @@ sfdx alias:unset my-org
 
 # Scratch Org
 # - https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_scratch_orgs_def_file.htm
-sfdx force:org:create -f config/project-scratch-def.json --setalias lwcRecipesScratch --durationdays 7 --setdefaultusername
+sfdx config:set defaultdevhubusername=lwcRecipes
+sfdx force:org:create -f config/project-scratch-def.json --durationdays 7 --setdefaultusername --setalias lwcRecipesScratch
 ```
 

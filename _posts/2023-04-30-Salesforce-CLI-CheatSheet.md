@@ -31,9 +31,17 @@ sfdx config:unset defaultdevhubusername --global
 sfdx alias:set my-scratch-org=test-wvkpnfm5z113@example.com
 sfdx alias:unset my-org
 
-# Scratch Org
-# - https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_scratch_orgs_def_file.htm
-sfdx config:set defaultdevhubusername=lwcRecipes
-sfdx force:org:create -f config/project-scratch-def.json --durationdays 7 --setdefaultusername --setalias lwcRecipesScratch
+###
+# Scratch org usage example with Github trailheadapps/lwc-recipes
+sfdx auth:web:login -d -a myhuborg
+sfdx force:org:create -s -f config/project-scratch-def.json -a lwc-recipes
+# push source codes
+sfdx force:source:push
+# assign permissions
+sfdx force:user:permset:assign -n recipes
+# import sample data
+sfdx force:data:tree:import -p ./data/data-plan.json
+# open the scratch org
+sfdx force:org:open
 ```
 

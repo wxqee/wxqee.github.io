@@ -3,52 +3,188 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="dark light">
     <title>王晓强 · 个人网站</title>
     <meta name="description" content="王晓强的个人网站与职业档案">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/src/styles.css">
+    <!-- 引入 Inter 字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="site-header">
       <div class="container">
-        <div class="brand">WANG XIAOQIANG</div>
-        <nav class="nav">
-          <a href="/" class="nav-link">首页</a>
+        <a href="/" class="brand">WANG XIAOQIANG</a>
+        <nav class="nav-links">
           <a href="#about" class="nav-link">关于</a>
+          <a href="#experience" class="nav-link">经历</a>
+          <a href="#skills" class="nav-link">技能</a>
+          <a href="#projects" class="nav-link">项目</a>
           <a href="#contact" class="nav-link">联系</a>
         </nav>
       </div>
     </header>
-    <main class="main">
+
+    <main>
+      <!-- Hero Section -->
       <section class="hero">
-        <div class="container">
-          <h1 class="hero-title">现代·专业·可信</h1>
-          <p class="hero-subtitle">技术驱动的个人品牌与职业档案</p>
+        <div class="glow-orb"></div>
+        <div class="container hero-content">
+          <span class="hero-label">Available for new opportunities</span>
+          <h1 class="hero-title">
+            17年<br>
+            <span>全栈技术专家 / 团队管理者</span><br>
+          </h1>
+          <p class="hero-subtitle">
+            融合跨国咨询严谨性与创业公司开拓精神。精通现代 Web 全栈、云原生架构与敏捷团队管理。
+          </p>
           <div class="hero-actions">
-            <a class="btn primary" href="#about">了解我</a>
-            <a class="btn ghost" href="#contact">获取联系</a>
+            <a href="#projects" class="btn btn-primary">精选项目</a>
+            <a href="#contact" class="btn btn-ghost">获取联系</a>
           </div>
         </div>
       </section>
+
+      <!-- About Section -->
       <section id="about" class="section">
         <div class="container">
-          <h2>关于我</h2>
-          <p>此处将在第二步进行风格化设计与内容规划，当前为占位结构以便本地联调与 GitHub Pages 发布配置。</p>
+          <h2 class="section-title">关于我</h2>
+          <div class="grid">
+            <div class="card">
+              <h3>技术广度</h3>
+              <p>跨越 AI、前端（React/Vue）、后端（Node.js/Go）与 DevOps（K8s/Docker）的全栈能力。具备复杂系统架构设计与落地经验。</p>
+            </div>
+            <div class="card">
+              <h3>管理经验</h3>
+              <p>10年敏捷开发实践（CSM 认证），曾从零组建并带领 10+ 人的技术团队，成功交付多个高复杂度跨国项目。</p>
+            </div>
+            <div class="card">
+              <h3>业务价值</h3>
+              <p>以技术驱动业务增长。曾主导支持 6000+ 门店的 SaaS 系统抗疫交付，以及服务四大的一体化解决方案。</p>
+            </div>
+          </div>
         </div>
       </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="section">
+        <div class="container">
+          <h2 class="section-title">职业经历</h2>
+          <div class="grid">
+            <div class="card">
+              <span class="tag">2022.05 — 2025.09</span>
+              <h3 style="margin-top: 16px;">Senior Front-end / Tech Lead</h3>
+              <p style="color: var(--accent-cyan); margin-bottom: 8px;">Global Professional Services Firm</p>
+              <p>主导企业级定制化开发，交付多个大型跨国项目。构建自动化工具链，将流程从数十步缩减为一键执行，提升团队效率 50%+。</p>
+            </div>
+            <div class="card">
+              <span class="tag">2018.02 — 2021.01</span>
+              <h3 style="margin-top: 16px;">Front-end Lead (Founding Member)</h3>
+              <p style="color: var(--accent-cyan); margin-bottom: 8px;">Southeast Asia Retail SaaS Unicorn</p>
+              <p>从 2 人扩充至 10 人技术团队。疫情期间两周内上线外卖模块，成功支撑 6000+ 餐饮门店业务连续性。</p>
+            </div>
+            <div class="card">
+              <span class="tag">2016.10 — 2018.01</span>
+              <h3 style="margin-top: 16px;">Senior Engineer</h3>
+              <p style="color: var(--accent-cyan); margin-bottom: 8px;">Leading Logistics Tech Platform</p>
+              <p>核心物流系统重构，基于 K8s 实现容器化部署与运维自动化。</p>
+            </div>
+             <div class="card">
+              <span class="tag">2016.07 — 2016.10</span>
+              <h3 style="margin-top: 16px;">CTO / Co-founder</h3>
+              <p style="color: var(--accent-cyan); margin-bottom: 8px;">Health Tech Startup</p>
+              <p>负责技术战略与团队组建，从零构建移动端与后端架构。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="section-title">技术栈</h2>
+          <div class="card">
+            <h3>Languages & Frameworks</h3>
+            <div class="tags">
+              <span class="tag">JavaScript / TypeScript</span>
+              <span class="tag">React / Next.js / Vue</span>
+              <span class="tag">Node.js / Go</span>
+              <span class="tag">Python / Bash Shell</span>
+              <span class="tag">Java / C++</span>
+            </div>
+            <h3 style="margin-top: 32px;">Infrastructure & DevOps</h3>
+            <div class="tags">
+              <span class="tag">Kubernetes / Docker</span>
+              <span class="tag">AWS (ECS/EKS/RDS)</span>
+              <span class="tag">CI/CD (GitLab/GitHub)</span>
+              <span class="tag">ELK Stack</span>
+              <span class="tag">MongoDB / Redis / MySQL</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title">精选项目 Highlights</h2>
+          <div class="grid">
+            <div class="card">
+              <h3>O2O 餐饮 SaaS 平台</h3>
+              <p style="margin-bottom: 16px;">疫情期间急需转型，高并发流量冲击。极速构建 Web App，微服务架构支撑 6000+ 门店运营。</p>
+              <div class="tags">
+                <span class="tag">High Concurrency</span>
+                <span class="tag">Microservices</span>
+                <span class="tag">React/Node.js</span>
+              </div>
+            </div>
+            <div class="card">
+              <h3>企业级自动化交付体系</h3>
+              <p style="margin-bottom: 16px;">开发一键部署与代码检查工具链，将流程步骤从几十步缩减为一键执行，大幅降低交付成本。</p>
+              <div class="tags">
+                <span class="tag">DevOps</span>
+                <span class="tag">Automation</span>
+                <span class="tag">Scripting</span>
+              </div>
+            </div>
+            <div class="card">
+              <h3>分布式日志监控系统</h3>
+              <p style="margin-bottom: 16px;">基于 ELK Stack 设计集中式日志平台，实时监控系统健康度，显著缩短故障响应时间。</p>
+              <div class="tags">
+                <span class="tag">ELK</span>
+                <span class="tag">Observability</span>
+                <span class="tag">System Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
       <section id="contact" class="section">
         <div class="container">
-          <h2>联系</h2>
-          <p>该区域将在第三步填充渠道与合规信息。</p>
+          <div class="card" style="text-align: center;">
+            <h2 style="font-size: 2rem; margin-bottom: 16px; color: var(--text-main);">准备好开始了吗？</h2>
+            <p style="margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto;">
+              如果您对我的技术背景感兴趣，或者有合作意向，欢迎通过以下方式联系我。
+            </p>
+            <div class="hero-actions" style="justify-content: center;">
+              <a href="mailto:your-email@example.com" class="btn btn-primary">发送邮件</a>
+              <a href="https://github.com/wxqee" target="_blank" class="btn btn-ghost">GitHub</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+
     <footer class="site-footer">
       <div class="container">
-        <small>© <span id="year"></span> Wang Xiaoqiang</small>
+        <p>&copy; <span id="year"></span> Wang Xiaoqiang. All rights reserved.</p>
+        <p style="font-size: 0.8rem; margin-top: 8px; opacity: 0.6;">Designed & Built with Modern Web Tech</p>
       </div>
     </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
